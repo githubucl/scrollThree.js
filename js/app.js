@@ -58,8 +58,8 @@ export default class Sketch {
 
         this.renderer.render(this.scene, this.camera);
 
-        // this.percentage = this.lerp(this.percentage, this.scrollY, 0.1);
-        this.timeline.seek(this.percentage * 4500)
+        this.percentage = this.lerp(this.percentage, document.documentElement.scrollTop, 0.1);
+        this.timeline.seek(this.percentage * 4500 / this.maxHeight)
         window.requestAnimationFrame(this.render.bind(this))
 
     }
@@ -69,7 +69,7 @@ export default class Sketch {
         // e.preventDefault();
         e.stopPropagation();
 
-        this.percentage = document.documentElement.scrollTop / this.maxHeight
+        // this.percentage = document.documentElement.scrollTop / this.maxHeight
 
     }
     lerp(a, b, t) {
@@ -131,6 +131,7 @@ export default class Sketch {
 
 
 }
+
 new Sketch({
     dom: document.getElementById('container'),
     page: document.querySelector('main')

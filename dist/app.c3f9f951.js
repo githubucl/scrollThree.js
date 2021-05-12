@@ -3319,13 +3319,9 @@ class Vector3 {
 exports.Vector3 = Vector3;
 Vector3.prototype.isVector3 = true;
 
-const _vector =
-/*@__PURE__*/
-new Vector3();
+const _vector = /*@__PURE__*/new Vector3();
 
-const _quaternion =
-/*@__PURE__*/
-new Quaternion();
+const _quaternion = /*@__PURE__*/new Quaternion();
 
 class Box3 {
   constructor(min = new Vector3(+Infinity, +Infinity, +Infinity), max = new Vector3(-Infinity, -Infinity, -Infinity)) {
@@ -3692,73 +3688,33 @@ class Box3 {
 
 exports.Box3 = Box3;
 Box3.prototype.isBox3 = true;
-const _points = [
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3(),
-/*@__PURE__*/
-new Vector3()];
+const _points = [/*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3(), /*@__PURE__*/new Vector3()];
 
-const _vector$1 =
-/*@__PURE__*/
-new Vector3();
+const _vector$1 = /*@__PURE__*/new Vector3();
 
-const _box =
-/*@__PURE__*/
-new Box3(); // triangle centered vertices
+const _box = /*@__PURE__*/new Box3(); // triangle centered vertices
 
 
-const _v0 =
-/*@__PURE__*/
-new Vector3();
+const _v0 = /*@__PURE__*/new Vector3();
 
-const _v1 =
-/*@__PURE__*/
-new Vector3();
+const _v1 = /*@__PURE__*/new Vector3();
 
-const _v2 =
-/*@__PURE__*/
-new Vector3(); // triangle edge vectors
+const _v2 = /*@__PURE__*/new Vector3(); // triangle edge vectors
 
 
-const _f0 =
-/*@__PURE__*/
-new Vector3();
+const _f0 = /*@__PURE__*/new Vector3();
 
-const _f1 =
-/*@__PURE__*/
-new Vector3();
+const _f1 = /*@__PURE__*/new Vector3();
 
-const _f2 =
-/*@__PURE__*/
-new Vector3();
+const _f2 = /*@__PURE__*/new Vector3();
 
-const _center =
-/*@__PURE__*/
-new Vector3();
+const _center = /*@__PURE__*/new Vector3();
 
-const _extents =
-/*@__PURE__*/
-new Vector3();
+const _extents = /*@__PURE__*/new Vector3();
 
-const _triangleNormal =
-/*@__PURE__*/
-new Vector3();
+const _triangleNormal = /*@__PURE__*/new Vector3();
 
-const _testAxis =
-/*@__PURE__*/
-new Vector3();
+const _testAxis = /*@__PURE__*/new Vector3();
 
 function satForAxes(axes, v0, v1, v2, extents) {
   for (let i = 0, j = axes.length - 3; i <= j; i += 3) {
@@ -3781,9 +3737,7 @@ function satForAxes(axes, v0, v1, v2, extents) {
   return true;
 }
 
-const _box$1 =
-/*@__PURE__*/
-new Box3();
+const _box$1 = /*@__PURE__*/new Box3();
 
 class Sphere {
   constructor(center = new Vector3(), radius = -1) {
@@ -3911,33 +3865,19 @@ class Sphere {
 
 exports.Sphere = Sphere;
 
-const _vector$2 =
-/*@__PURE__*/
-new Vector3();
+const _vector$2 = /*@__PURE__*/new Vector3();
 
-const _segCenter =
-/*@__PURE__*/
-new Vector3();
+const _segCenter = /*@__PURE__*/new Vector3();
 
-const _segDir =
-/*@__PURE__*/
-new Vector3();
+const _segDir = /*@__PURE__*/new Vector3();
 
-const _diff =
-/*@__PURE__*/
-new Vector3();
+const _diff = /*@__PURE__*/new Vector3();
 
-const _edge1 =
-/*@__PURE__*/
-new Vector3();
+const _edge1 = /*@__PURE__*/new Vector3();
 
-const _edge2 =
-/*@__PURE__*/
-new Vector3();
+const _edge2 = /*@__PURE__*/new Vector3();
 
-const _normal =
-/*@__PURE__*/
-new Vector3();
+const _normal = /*@__PURE__*/new Vector3();
 
 class Ray {
   constructor(origin = new Vector3(), direction = new Vector3(0, 0, -1)) {
@@ -5029,41 +4969,23 @@ class Matrix4 {
 exports.Matrix4 = Matrix4;
 Matrix4.prototype.isMatrix4 = true;
 
-const _v1$1 =
-/*@__PURE__*/
-new Vector3();
+const _v1$1 = /*@__PURE__*/new Vector3();
 
-const _m1 =
-/*@__PURE__*/
-new Matrix4();
+const _m1 = /*@__PURE__*/new Matrix4();
 
-const _zero =
-/*@__PURE__*/
-new Vector3(0, 0, 0);
+const _zero = /*@__PURE__*/new Vector3(0, 0, 0);
 
-const _one =
-/*@__PURE__*/
-new Vector3(1, 1, 1);
+const _one = /*@__PURE__*/new Vector3(1, 1, 1);
 
-const _x =
-/*@__PURE__*/
-new Vector3();
+const _x = /*@__PURE__*/new Vector3();
 
-const _y =
-/*@__PURE__*/
-new Vector3();
+const _y = /*@__PURE__*/new Vector3();
 
-const _z =
-/*@__PURE__*/
-new Vector3();
+const _z = /*@__PURE__*/new Vector3();
 
-const _matrix =
-/*@__PURE__*/
-new Matrix4();
+const _matrix = /*@__PURE__*/new Matrix4();
 
-const _quaternion$1 =
-/*@__PURE__*/
-new Quaternion();
+const _quaternion$1 = /*@__PURE__*/new Quaternion();
 
 class Euler {
   constructor(x = 0, y = 0, z = 0, order = Euler.DefaultOrder) {
@@ -5938,17 +5860,11 @@ Object3D.prototype = Object.assign(Object.create(EventDispatcher.prototype), {
   }
 });
 
-const _vector1 =
-/*@__PURE__*/
-new Vector3();
+const _vector1 = /*@__PURE__*/new Vector3();
 
-const _vector2 =
-/*@__PURE__*/
-new Vector3();
+const _vector2 = /*@__PURE__*/new Vector3();
 
-const _normalMatrix =
-/*@__PURE__*/
-new Matrix3();
+const _normalMatrix = /*@__PURE__*/new Matrix3();
 
 class Plane {
   constructor(normal = new Vector3(1, 0, 0), constant = 0) {
@@ -6099,45 +6015,25 @@ class Plane {
 exports.Plane = Plane;
 Plane.prototype.isPlane = true;
 
-const _v0$1 =
-/*@__PURE__*/
-new Vector3();
+const _v0$1 = /*@__PURE__*/new Vector3();
 
-const _v1$3 =
-/*@__PURE__*/
-new Vector3();
+const _v1$3 = /*@__PURE__*/new Vector3();
 
-const _v2$1 =
-/*@__PURE__*/
-new Vector3();
+const _v2$1 = /*@__PURE__*/new Vector3();
 
-const _v3 =
-/*@__PURE__*/
-new Vector3();
+const _v3 = /*@__PURE__*/new Vector3();
 
-const _vab =
-/*@__PURE__*/
-new Vector3();
+const _vab = /*@__PURE__*/new Vector3();
 
-const _vac =
-/*@__PURE__*/
-new Vector3();
+const _vac = /*@__PURE__*/new Vector3();
 
-const _vbc =
-/*@__PURE__*/
-new Vector3();
+const _vbc = /*@__PURE__*/new Vector3();
 
-const _vap =
-/*@__PURE__*/
-new Vector3();
+const _vap = /*@__PURE__*/new Vector3();
 
-const _vbp =
-/*@__PURE__*/
-new Vector3();
+const _vbp = /*@__PURE__*/new Vector3();
 
-const _vcp =
-/*@__PURE__*/
-new Vector3();
+const _vcp = /*@__PURE__*/new Vector3();
 
 class Triangle {
   constructor(a = new Vector3(), b = new Vector3(), c = new Vector3()) {
@@ -9598,13 +9494,9 @@ class DataTexture extends Texture {
 exports.DataTexture = DataTexture;
 DataTexture.prototype.isDataTexture = true;
 
-const _sphere$1 =
-/*@__PURE__*/
-new Sphere();
+const _sphere$1 = /*@__PURE__*/new Sphere();
 
-const _vector$5 =
-/*@__PURE__*/
-new Vector3();
+const _vector$5 = /*@__PURE__*/new Vector3();
 
 class Frustum {
   constructor(p0 = new Plane(), p1 = new Plane(), p2 = new Plane(), p3 = new Plane(), p4 = new Plane(), p5 = new Plane()) {
@@ -10518,9 +10410,9 @@ const ShaderLib = {
         value: 0.0
       },
       envMapIntensity: {
-        value: 1 // temporary
+        value: 1
+      } // temporary
 
-      }
     }]),
     vertexShader: ShaderChunk.meshphysical_vert,
     fragmentShader: ShaderChunk.meshphysical_frag
@@ -19019,53 +18911,29 @@ SpriteMaterial.prototype.isSpriteMaterial = true;
 
 let _geometry;
 
-const _intersectPoint =
-/*@__PURE__*/
-new Vector3();
+const _intersectPoint = /*@__PURE__*/new Vector3();
 
-const _worldScale =
-/*@__PURE__*/
-new Vector3();
+const _worldScale = /*@__PURE__*/new Vector3();
 
-const _mvPosition =
-/*@__PURE__*/
-new Vector3();
+const _mvPosition = /*@__PURE__*/new Vector3();
 
-const _alignedPosition =
-/*@__PURE__*/
-new Vector2();
+const _alignedPosition = /*@__PURE__*/new Vector2();
 
-const _rotatedPosition =
-/*@__PURE__*/
-new Vector2();
+const _rotatedPosition = /*@__PURE__*/new Vector2();
 
-const _viewWorldMatrix =
-/*@__PURE__*/
-new Matrix4();
+const _viewWorldMatrix = /*@__PURE__*/new Matrix4();
 
-const _vA$1 =
-/*@__PURE__*/
-new Vector3();
+const _vA$1 = /*@__PURE__*/new Vector3();
 
-const _vB$1 =
-/*@__PURE__*/
-new Vector3();
+const _vB$1 = /*@__PURE__*/new Vector3();
 
-const _vC$1 =
-/*@__PURE__*/
-new Vector3();
+const _vC$1 = /*@__PURE__*/new Vector3();
 
-const _uvA$1 =
-/*@__PURE__*/
-new Vector2();
+const _uvA$1 = /*@__PURE__*/new Vector2();
 
-const _uvB$1 =
-/*@__PURE__*/
-new Vector2();
+const _uvB$1 = /*@__PURE__*/new Vector2();
 
-const _uvC$1 =
-/*@__PURE__*/
-new Vector2();
+const _uvC$1 = /*@__PURE__*/new Vector2();
 
 class Sprite extends Object3D {
   constructor(material) {
@@ -19183,13 +19051,9 @@ function transformVertex(vertexPosition, mvPosition, center, scale, sin, cos) {
   vertexPosition.applyMatrix4(_viewWorldMatrix);
 }
 
-const _v1$4 =
-/*@__PURE__*/
-new Vector3();
+const _v1$4 = /*@__PURE__*/new Vector3();
 
-const _v2$2 =
-/*@__PURE__*/
-new Vector3();
+const _v2$2 = /*@__PURE__*/new Vector3();
 
 class LOD extends Object3D {
   constructor() {
@@ -19436,13 +19300,9 @@ Bone.prototype = Object.assign(Object.create(Object3D.prototype), {
   isBone: true
 });
 
-const _offsetMatrix =
-/*@__PURE__*/
-new Matrix4();
+const _offsetMatrix = /*@__PURE__*/new Matrix4();
 
-const _identityMatrix =
-/*@__PURE__*/
-new Matrix4();
+const _identityMatrix = /*@__PURE__*/new Matrix4();
 
 class Skeleton {
   constructor(bones = [], boneInverses = []) {
@@ -20141,7 +20001,7 @@ class VideoTexture extends Texture {
 
   update() {
     const video = this.image;
-    const hasVideoFrameCallback = 'requestVideoFrameCallback' in video;
+    const hasVideoFrameCallback = ('requestVideoFrameCallback' in video);
 
     if (hasVideoFrameCallback === false && video.readyState >= video.HAVE_CURRENT_DATA) {
       this.needsUpdate = true;
@@ -22841,9 +22701,7 @@ class WireframeGeometry extends BufferGeometry {
 }
 
 exports.WireframeGeometry = WireframeGeometry;
-var Geometries =
-/*#__PURE__*/
-Object.freeze({
+var Geometries = /*#__PURE__*/Object.freeze({
   __proto__: null,
   BoxGeometry: BoxGeometry,
   BoxBufferGeometry: BoxGeometry,
@@ -23674,9 +23532,7 @@ class LineDashedMaterial extends LineBasicMaterial {
 
 exports.LineDashedMaterial = LineDashedMaterial;
 LineDashedMaterial.prototype.isLineDashedMaterial = true;
-var Materials =
-/*#__PURE__*/
-Object.freeze({
+var Materials = /*#__PURE__*/Object.freeze({
   __proto__: null,
   ShadowMaterial: ShadowMaterial,
   SpriteMaterial: SpriteMaterial,
@@ -26635,9 +26491,7 @@ class SplineCurve extends Curve {
 
 exports.SplineCurve = SplineCurve;
 SplineCurve.prototype.isSplineCurve = true;
-var Curves =
-/*#__PURE__*/
-Object.freeze({
+var Curves = /*#__PURE__*/Object.freeze({
   __proto__: null,
   ArcCurve: ArcCurve,
   CatmullRomCurve3: CatmullRomCurve3,
@@ -27061,17 +26915,11 @@ class HemisphereLight extends Light {
 exports.HemisphereLight = HemisphereLight;
 HemisphereLight.prototype.isHemisphereLight = true;
 
-const _projScreenMatrix =
-/*@__PURE__*/
-new Matrix4();
+const _projScreenMatrix = /*@__PURE__*/new Matrix4();
 
-const _lightPositionWorld =
-/*@__PURE__*/
-new Vector3();
+const _lightPositionWorld = /*@__PURE__*/new Vector3();
 
-const _lookTarget =
-/*@__PURE__*/
-new Vector3();
+const _lookTarget = /*@__PURE__*/new Vector3();
 
 class LightShadow {
   constructor(camera) {
@@ -27223,17 +27071,11 @@ class SpotLight extends Light {
 exports.SpotLight = SpotLight;
 SpotLight.prototype.isSpotLight = true;
 
-const _projScreenMatrix$1 =
-/*@__PURE__*/
-new Matrix4();
+const _projScreenMatrix$1 = /*@__PURE__*/new Matrix4();
 
-const _lightPositionWorld$1 =
-/*@__PURE__*/
-new Vector3();
+const _lightPositionWorld$1 = /*@__PURE__*/new Vector3();
 
-const _lookTarget$1 =
-/*@__PURE__*/
-new Vector3();
+const _lookTarget$1 = /*@__PURE__*/new Vector3();
 
 class PointLightShadow extends LightShadow {
   constructor() {
@@ -29464,21 +29306,13 @@ function now() {
   return (typeof performance === 'undefined' ? Date : performance).now(); // see #10732
 }
 
-const _position$2 =
-/*@__PURE__*/
-new Vector3();
+const _position$2 = /*@__PURE__*/new Vector3();
 
-const _quaternion$3 =
-/*@__PURE__*/
-new Quaternion();
+const _quaternion$3 = /*@__PURE__*/new Quaternion();
 
-const _scale$1 =
-/*@__PURE__*/
-new Vector3();
+const _scale$1 = /*@__PURE__*/new Vector3();
 
-const _orientation =
-/*@__PURE__*/
-new Vector3();
+const _orientation = /*@__PURE__*/new Vector3();
 
 class AudioListener extends Object3D {
   constructor() {
@@ -29835,21 +29669,13 @@ class Audio extends Object3D {
 
 exports.Audio = Audio;
 
-const _position$3 =
-/*@__PURE__*/
-new Vector3();
+const _position$3 = /*@__PURE__*/new Vector3();
 
-const _quaternion$4 =
-/*@__PURE__*/
-new Quaternion();
+const _quaternion$4 = /*@__PURE__*/new Quaternion();
 
-const _scale$2 =
-/*@__PURE__*/
-new Vector3();
+const _scale$2 = /*@__PURE__*/new Vector3();
 
-const _orientation$1 =
-/*@__PURE__*/
-new Vector3();
+const _orientation$1 = /*@__PURE__*/new Vector3();
 
 class PositionalAudio extends Audio {
   constructor(listener) {
@@ -32204,9 +32030,7 @@ class Cylindrical {
 
 exports.Cylindrical = Cylindrical;
 
-const _vector$8 =
-/*@__PURE__*/
-new Vector2();
+const _vector$8 = /*@__PURE__*/new Vector2();
 
 class Box2 {
   constructor(min = new Vector2(+Infinity, +Infinity), max = new Vector2(-Infinity, -Infinity)) {
@@ -32361,13 +32185,9 @@ class Box2 {
 exports.Box2 = Box2;
 Box2.prototype.isBox2 = true;
 
-const _startP =
-/*@__PURE__*/
-new Vector3();
+const _startP = /*@__PURE__*/new Vector3();
 
-const _startEnd =
-/*@__PURE__*/
-new Vector3();
+const _startEnd = /*@__PURE__*/new Vector3();
 
 class Line3 {
   constructor(start = new Vector3(), end = new Vector3()) {
@@ -32492,9 +32312,7 @@ ImmediateRenderObject.prototype = Object.create(Object3D.prototype);
 ImmediateRenderObject.prototype.constructor = ImmediateRenderObject;
 ImmediateRenderObject.prototype.isImmediateRenderObject = true;
 
-const _vector$9 =
-/*@__PURE__*/
-new Vector3();
+const _vector$9 = /*@__PURE__*/new Vector3();
 
 class SpotLightHelper extends Object3D {
   constructor(light, color) {
@@ -32549,17 +32367,11 @@ class SpotLightHelper extends Object3D {
 
 exports.SpotLightHelper = SpotLightHelper;
 
-const _vector$a =
-/*@__PURE__*/
-new Vector3();
+const _vector$a = /*@__PURE__*/new Vector3();
 
-const _boneMatrix =
-/*@__PURE__*/
-new Matrix4();
+const _boneMatrix = /*@__PURE__*/new Matrix4();
 
-const _matrixWorldInv =
-/*@__PURE__*/
-new Matrix4();
+const _matrixWorldInv = /*@__PURE__*/new Matrix4();
 
 class SkeletonHelper extends LineSegments {
   constructor(object) {
@@ -32706,17 +32518,11 @@ class PointLightHelper extends Mesh {
 
 exports.PointLightHelper = PointLightHelper;
 
-const _vector$b =
-/*@__PURE__*/
-new Vector3();
+const _vector$b = /*@__PURE__*/new Vector3();
 
-const _color1 =
-/*@__PURE__*/
-new Color();
+const _color1 = /*@__PURE__*/new Color();
 
-const _color2 =
-/*@__PURE__*/
-new Color();
+const _color2 = /*@__PURE__*/new Color();
 
 class HemisphereLightHelper extends Object3D {
   constructor(light, size, color) {
@@ -32866,17 +32672,11 @@ class PolarGridHelper extends LineSegments {
 
 exports.PolarGridHelper = PolarGridHelper;
 
-const _v1$6 =
-/*@__PURE__*/
-new Vector3();
+const _v1$6 = /*@__PURE__*/new Vector3();
 
-const _v2$3 =
-/*@__PURE__*/
-new Vector3();
+const _v2$3 = /*@__PURE__*/new Vector3();
 
-const _v3$1 =
-/*@__PURE__*/
-new Vector3();
+const _v3$1 = /*@__PURE__*/new Vector3();
 
 class DirectionalLightHelper extends Object3D {
   constructor(light, size, color) {
@@ -32934,13 +32734,9 @@ class DirectionalLightHelper extends Object3D {
 
 exports.DirectionalLightHelper = DirectionalLightHelper;
 
-const _vector$c =
-/*@__PURE__*/
-new Vector3();
+const _vector$c = /*@__PURE__*/new Vector3();
 
-const _camera =
-/*@__PURE__*/
-new Camera();
+const _camera = /*@__PURE__*/new Camera();
 /**
  *	- shows frustum, line of sight and up of the camera
  *	- suitable for fast updates
@@ -33083,9 +32879,7 @@ function setPoint(point, pointMap, geometry, camera, x, y, z) {
   }
 }
 
-const _box$3 =
-/*@__PURE__*/
-new Box3();
+const _box$3 = /*@__PURE__*/new Box3();
 
 class BoxHelper extends LineSegments {
   constructor(object, color = 0xffff00) {
@@ -33248,9 +33042,7 @@ class PlaneHelper extends Line {
 
 exports.PlaneHelper = PlaneHelper;
 
-const _axis =
-/*@__PURE__*/
-new Vector3();
+const _axis = /*@__PURE__*/new Vector3();
 
 let _lineGeometry, _coneGeometry;
 
@@ -33431,21 +33223,15 @@ const backgroundMaterial = new MeshBasicMaterial({
 });
 const backgroundBox = new Mesh(new BoxGeometry(), backgroundMaterial);
 
-const _flatCamera =
-/*@__PURE__*/
-new OrthographicCamera();
+const _flatCamera = /*@__PURE__*/new OrthographicCamera();
 
 const {
   _lodPlanes,
   _sizeLods,
   _sigmas
-} =
-/*@__PURE__*/
-_createPlanes();
+} = /*@__PURE__*/_createPlanes();
 
-const _clearColor =
-/*@__PURE__*/
-new Color();
+const _clearColor = /*@__PURE__*/new Color();
 
 let _oldTarget = null; // Golden Ratio
 
@@ -33453,27 +33239,7 @@ const PHI = (1 + Math.sqrt(5)) / 2;
 const INV_PHI = 1 / PHI; // Vertices of a dodecahedron (except the opposites, which represent the
 // same axis), used as axis directions evenly spread on a sphere.
 
-const _axisDirections = [
-/*@__PURE__*/
-new Vector3(1, 1, 1),
-/*@__PURE__*/
-new Vector3(-1, 1, 1),
-/*@__PURE__*/
-new Vector3(1, 1, -1),
-/*@__PURE__*/
-new Vector3(-1, 1, -1),
-/*@__PURE__*/
-new Vector3(0, PHI, INV_PHI),
-/*@__PURE__*/
-new Vector3(0, PHI, -INV_PHI),
-/*@__PURE__*/
-new Vector3(INV_PHI, 0, PHI),
-/*@__PURE__*/
-new Vector3(-INV_PHI, 0, PHI),
-/*@__PURE__*/
-new Vector3(PHI, INV_PHI, 0),
-/*@__PURE__*/
-new Vector3(-PHI, INV_PHI, 0)];
+const _axisDirections = [/*@__PURE__*/new Vector3(1, 1, 1), /*@__PURE__*/new Vector3(-1, 1, 1), /*@__PURE__*/new Vector3(1, 1, -1), /*@__PURE__*/new Vector3(-1, 1, -1), /*@__PURE__*/new Vector3(0, PHI, INV_PHI), /*@__PURE__*/new Vector3(0, PHI, -INV_PHI), /*@__PURE__*/new Vector3(INV_PHI, 0, PHI), /*@__PURE__*/new Vector3(-INV_PHI, 0, PHI), /*@__PURE__*/new Vector3(PHI, INV_PHI, 0), /*@__PURE__*/new Vector3(-PHI, INV_PHI, 0)];
 /**
  * This class generates a Prefiltered, Mipmapped Radiance Environment Map
  * (PMREM) from a cubeMap environment texture. This allows different levels of
@@ -36273,8 +36039,8 @@ var OrbitControls = function (object, domElement) {
 
   function handleTouchEnd()
   /*event*/
-  {} // no-op
-  //
+  {// no-op
+  } //
   // event handlers - FSM: listen for events and reset state
   //
 
@@ -38356,9 +38122,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Sketch =
-/*#__PURE__*/
-function () {
+var Sketch = /*#__PURE__*/function () {
   function Sketch(options) {
     _classCallCheck(this, Sketch);
 
@@ -38410,9 +38174,9 @@ function () {
 
       this.mesh.rotation.x = this.time / 4000;
       this.mesh.rotation.y = this.time / 2000;
-      this.renderer.render(this.scene, this.camera); // this.percentage = this.lerp(this.percentage, this.scrollY, 0.1);
-
-      this.timeline.seek(this.percentage * 4500);
+      this.renderer.render(this.scene, this.camera);
+      this.percentage = this.lerp(this.percentage, document.documentElement.scrollTop, 0.1);
+      this.timeline.seek(this.percentage * 4500 / this.maxHeight);
       window.requestAnimationFrame(this.render.bind(this));
     }
   }, {
@@ -38420,8 +38184,7 @@ function () {
     value: function onWheel(e) {
       e.stopImmediatePropagation(); // e.preventDefault();
 
-      e.stopPropagation();
-      this.percentage = document.documentElement.scrollTop / this.maxHeight;
+      e.stopPropagation(); // this.percentage = document.documentElement.scrollTop / this.maxHeight
     }
   }, {
     key: "lerp",
@@ -38494,7 +38257,7 @@ new Sketch({
   dom: document.getElementById('container'),
   page: document.querySelector('main')
 });
-},{"three":"node_modules/three/build/three.module.js","three/examples/jsm/controls/OrbitControls.js":"node_modules/three/examples/jsm/controls/OrbitControls.js","animejs/lib/anime.es.js":"node_modules/animejs/lib/anime.es.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"three":"node_modules/three/build/three.module.js","three/examples/jsm/controls/OrbitControls.js":"node_modules/three/examples/jsm/controls/OrbitControls.js","animejs/lib/anime.es.js":"node_modules/animejs/lib/anime.es.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -38522,7 +38285,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60289" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59571" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -38553,8 +38316,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -38697,5 +38461,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","js/app.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
 //# sourceMappingURL=/app.c3f9f951.js.map
